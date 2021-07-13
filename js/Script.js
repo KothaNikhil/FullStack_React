@@ -1,5 +1,13 @@
 // JavaScript source code
 $(document).ready(function () {
+    $('#login').click(function () {
+        $('#loginModal').modal('toggle');
+    });
+    $('#reserveTable-button').click(function () {
+        $('#reservetable').modal('toggle');
+    });
+
+
     $('#mycarousel').carousel({ interval: 2000 });
     $("#carouselButton").click(function () {
         if ($('#carouselButton').children('span').hasClass('fa-pause')) {
